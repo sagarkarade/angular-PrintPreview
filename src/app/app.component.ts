@@ -4,31 +4,24 @@ import { FormlyFieldConfig } from '@ngx-formly/core';
 
 @Component({
   selector: 'my-app',
-  template: `
-    <form [formGroup]="form" (ngSubmit)="submit(model)">
-      <formly-form [model]="model" [fields]="fields">
-        <button type="submit">Submit</button>
-      </formly-form>
-    </form>
-
-    {{ model|json }}
-  `,
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
   form = new FormGroup({});
   model = {};
   fields: FormlyFieldConfig[] = [
     {
-      key: 'name',
+      key: 'input',
       type: 'input',
       templateOptions: {
         label: 'Field 1',
         placeholder: 'Formly is terrific!',
+        required: true,
       },
     },
   ];
 
-  submit(model) {
-    console.log(model);
-  }
+  // submit(model) {
+  //   console.log(model);
+  // }
 }
