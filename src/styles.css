@@ -21,3 +21,14 @@ td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+app-print-page {
+  display: none;
+}
+@media print {
+  app-print-page {
+    display: block;
+  }
+  app-main-page {
+    display: none;
+  }
+}
