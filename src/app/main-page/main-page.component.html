@@ -1,6 +1,9 @@
 <h1>Dynamic Page Print</h1>
 
 <h3>Here is the relevant data that you want to print.</h3>
-<input type="text" placeholder="Enter your Information" />
+<form>
+  <input type="text" placeholder="Enter your Information" /> <br /><br />
 
-<button (click)="printPage()">Submit</button>
+  <button (click)="printPage()">Submit</button>
+  <input type="reset" value="Reset" />
+</form>
