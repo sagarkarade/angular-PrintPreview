@@ -5,6 +5,8 @@ import { FormlyModule } from '@ngx-formly/core';
 import { AppComponent } from './app.component';
 import { NgxPrintModule } from 'ngx-print';
 import { FormlyFieldInput } from '@ngx-formly/bootstrap';
+import { MainPageComponent } from './main-page/main-page.component';
+import { PrintPageComponent } from './print-page/print-page.component';
 
 @NgModule({
   imports: [
@@ -18,7 +20,7 @@ import { FormlyFieldInput } from '@ngx-formly/bootstrap';
       ],
     }),
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, MainPageComponent, PrintPageComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
